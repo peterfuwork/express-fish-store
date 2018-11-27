@@ -6,11 +6,7 @@
         "desc" : "Chaetodon auriga is found in the Indo-Pacific region, from the Red Sea and eastern Africa (south to Mossel Bay, South Africa) to the Hawaiian, Marquesas and Ducie islands, north to southern Japan, south to Lord Howe Island and Rapa Iti, at depths of 1–35 metres (3–115 ft).",
         "type": "butterflyfish",
         "image": "https://dl.dropboxusercontent.com/s/eswwvr221zozmoq/auriga-%20butterfly.jpg",
-        "messages":[
-            { "text": "I like this fish" },
-            { "text": "Highly recommand" },
-            { "text": "Don't buy it from this store" }
-        ]
+        "code": "0Jbo1IxHs4"
     },
     {
         "id": 2,
@@ -19,11 +15,7 @@
         "desc" : "The copperband butterflyfish (Chelmon rostratus), also known as the beaked coral fish, is found in reefs in both the Pacific and Indian Oceans.",
         "type": "butterflyfish",
         "image": "https://dl.dropboxusercontent.com/s/wkd1gtlj8dtobhq/copper-band-butterfly.jpg",
-        "messages":[
-            { "text": "I like this fish" },
-            { "text": "Highly recommand" },
-            { "text": "Don't buy it from this store" }
-        ]
+        "code": "zFG7vW2BKn"
     },
     {
         "id": 3,
@@ -32,11 +24,7 @@
         "desc" : "The Saddle Butterflyfish, Chaetodon ephippium, is a species of butterflyfish (family Chaetodontidae)",
         "type": "butterflyfish",
         "image": "https://dl.dropboxusercontent.com/s/o0mcxnkpxlglj53/saddle-butterfly.jpg",
-        "messages":[
-            { "text": "I don't like this fish" },
-            { "text": "Highly recommand" },
-            { "text": "Don't buy it from this store" }
-        ]
+        "code": "SXIfr5mptm"
     },
     {
         "id": 4,
@@ -45,11 +33,7 @@
         "desc" : "The regal angelfish (Pygoplites diacanthus) or royal angelfish, is a species of marine angelfish of the family Pomacanthidae, and the monotypic genus Pygoplites.",
         "type": "angelfish",
         "image": "https://dl.dropboxusercontent.com/s/51ze9a4t57phqvb/royal-angel.jpg",
-        "messages":[
-            { "text": "I like this fish" },
-            { "text": "Highly recommand" },
-            { "text": "Don't buy it from this store" }
-        ]
+        "code": "H1HTy9h2pK"
     },
     {
         "id": 5,
@@ -58,11 +42,7 @@
         "desc" : "The emperor angelfish (Pomacanthus imperator) is a species of marine angelfish. It is a reef-associated fish, native to the Indian and Pacific Oceans, from the Red Sea to Hawaii and the Austral Islands.",
         "type": "angelfish",
         "image": "https://dl.dropboxusercontent.com/s/dtwhceonqo830vm/emperior-angel.jpg",
-        "messages":[
-            { "text": "I like this fish" },
-            { "text": "Highly recommand" },
-            { "text": "Don't buy it from this store" }
-        ]
+        "code": "4Npixi386s"
     },
     {
         "id": 6,
@@ -71,11 +51,7 @@
         "desc" : "Acanthurus leucosternon is a marine tropical fish belonging to the family Acanthuridae, or surgeonfishes. Its common names are powder blue tang and powder-blue surgeonfish.",
         "type": "tang",
         "image": "https://dl.dropboxusercontent.com/s/iynkpece7dz3les/powder-blue-tang.jpg",
-        "messages":[
-            { "text": "I like this fish" },
-            { "text": "Highly recommand" },
-            { "text": "Don't buy it from this store" }
-        ]
+        "code": "qMnJMu0Rch"
     },
     {
         "id": 7,
@@ -84,11 +60,7 @@
         "desc" : "The Moorish idol (Zanclus cornutus), is a marine fish species, the sole extant representative of the family Zanclidae.",
         "type": "butterflyfish",
         "image": "https://dl.dropboxusercontent.com/s/6l3h0nf3f19i3hd/moorish-idol.jpg",
-        "messages":[
-            { "text": "I like this fish" },
-            { "text": "Highly recommand" },
-            { "text": "Don't buy it from this store" }
-        ]
+        "code": "DhCrEsjO8c"
     },
     {
         "id": 8,
@@ -97,11 +69,7 @@
         "desc" : "Paracanthurus hepatus is a species of Indo-Pacific surgeonfish. A popular fish in marine aquaria, it is the only member of the genus Paracanthurus.",
         "type": "tang",
         "image": "https://dl.dropboxusercontent.com/s/gm53aoyx98m85l4/blue-tang.jpg",
-        "messages":[
-            { "text": "I like this fish" },
-            { "text": "Highly recommand" },
-            { "text": "Don't buy it from this store" }
-        ]
+        "code": "xQAPZetggl"
     },
     {
         "id": 9,
@@ -110,10 +78,6 @@
         "desc" : "The yellow tang (Zebrasoma flavescens) is a saltwater fish species of the family Acanthuridae. It is one of the most popular aquarium fish.",
         "type": "tang",
         "image": "https://dl.dropboxusercontent.com/s/gex057p93n155lp/yellow-tang.jpg",
-        "messages":[
-            { "text": "I like this fish" },
-            { "text": "Highly recommand" },
-            { "text": "Don't buy it from this store" }
-        ]
+        "code": "dYqOpaQBo9"
     }
 ]

@@ -1,10 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 var cors = require('cors');
+var randomString = require('random-string');
 const PORT = process.env.PORT || 3001;
 
 const app = express();
-const data = require('./fish');
+let data = require('./fish');
+let comments = require('./comments');
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -16,6 +18,10 @@ app.get('/', (req, res, next) => {
 
 app.get('/fish', (req, res, next) => {
     res.send({ fish: data })
+});
+
+app.get('/comments', (req, res, next) => {
+    res.send({ comments })
 });
 
 app.get('/fish/butterflyfish', (req, res, next) => {
@@ -46,27 +52,41 @@ app.get('/fish/:id', (req, res, next) => {
 app.post('/fishPOST', (req, res, next) => {
     console.log('req.body', req.body)
     const body = req.body;
-    const newObj = {
+    const randomNum = randomString({
+        length: 10,
+        numeric: true,
+        letters: true,
+        special: false,
+        exclude: ['a', 'b', '1']
+    });
+    const newFishObj = {
         id: data.length + 1,
         name: body.name,
         price: body.price,
         desc: body.desc,
         type: body.type,
         image: body.image,
-        messages: []
+        code: randomNum
     };
-    data.push(newObj);
-    res.send(newObj);
+    data.push(newFishObj);
+    comments = Object.assign({
+        [randomNum]:[]
+    }, comments);
+    console.log('newFishObj',newFishObj);
+    res.send(newFishObj);
 })
 
 app.post('/messagePOST', (req, res, next) => {
     console.log('req.body', req.body)
     const body = req.body;
     const newObj = {
-        text: body.message.text
+        text: body.comment.text,
+        user: ''
     };
-    data[(body.id) - 1].messages.push(newObj);
-    res.send(newObj);
+    comments[body.code].push(newObj);
+    const newPost = comments[body.code];
+    console.log('newPost',newPost)
+    res.send(newPost);
 })
 
 
