@@ -52,7 +52,7 @@ app.get('/fish/:id', (req, res, next) => {
 app.post('/fishPOST', (req, res, next) => {
     console.log('req.body', req.body)
     const body = req.body;
-    const randomNum = randomString({
+    const randomStr = randomString({
         length: 10,
         numeric: true,
         letters: true,
@@ -66,11 +66,11 @@ app.post('/fishPOST', (req, res, next) => {
         desc: body.desc,
         type: body.type,
         image: body.image,
-        code: randomNum
+        code: randomStr
     };
     data.push(newFishObj);
     comments = Object.assign({
-        [randomNum]:[]
+        [randomStr]:[]
     }, comments);
     console.log('newFishObj',newFishObj);
     res.send(newFishObj);
@@ -79,14 +79,47 @@ app.post('/fishPOST', (req, res, next) => {
 app.post('/messagePOST', (req, res, next) => {
     console.log('req.body', req.body)
     const body = req.body;
+    const randomStr = randomString({
+        length: 20,
+        numeric: true,
+        letters: true,
+        special: false
+    });
     const newObj = {
         text: body.comment.text,
-        user: ''
+        user: '',
+        cid: randomStr
     };
     comments[body.code].push(newObj);
     const newPost = comments[body.code];
     console.log('newPost',newPost)
     res.send(newPost);
+})
+
+app.put('/messagePUT', (req, res, next) => {
+    const body = req.body;
+    console.log('body',body);
+    const newObj = {
+        text: body.text,
+        user: body.user,
+        cid: body.cid
+    };
+    comments[body.code] = [ ...comments[body.code].slice(0, body.arrIndex),
+                            newObj, 
+                            ...comments[body.code].slice(body.arrIndex + 1)];
+    const newPost = comments[body.code];
+    console.log('newPost',newPost)
+    res.send(newPost);
+})
+
+app.delete('/messageDELETE', (req, res, next) => {
+    const body = req.body;
+    var mapped = comments[body.code].filter(obj => {
+        return obj.cid != req.body.cid;
+    })
+    comments[body.code] = mapped;
+    console.log('mapped',mapped)
+    res.send(mapped);
 })
 
 
