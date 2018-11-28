@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Threadfin butterflyfish",
+        "name": "Threadfin Butterflyfish",
         "price": 34.99,
         "desc" : "Chaetodon auriga is found in the Indo-Pacific region, from the Red Sea and eastern Africa (south to Mossel Bay, South Africa) to the Hawaiian, Marquesas and Ducie islands, north to southern Japan, south to Lord Howe Island and Rapa Iti, at depths of 1–35 metres (3–115 ft).",
         "type": "butterflyfish",
@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "name": "Copperband butterflyfish",
+        "name": "Copperband Butterflyfish",
         "price": 34.99,
         "desc" : "The copperband butterflyfish (Chelmon rostratus), also known as the beaked coral fish, is found in reefs in both the Pacific and Indian Oceans.",
         "type": "butterflyfish",
@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "name": "Saddleback butterflyfish",
+        "name": "Saddleback Butterflyfish",
         "price": 39.99,
         "desc" : "The Saddle Butterflyfish, Chaetodon ephippium, is a species of butterflyfish (family Chaetodontidae)",
         "type": "butterflyfish",
@@ -28,7 +28,7 @@
     },
     {
         "id": 4,
-        "name": "Regal angelfish",
+        "name": "Regal Angelfish",
         "price": 99.99,
         "desc" : "The regal angelfish (Pygoplites diacanthus) or royal angelfish, is a species of marine angelfish of the family Pomacanthidae, and the monotypic genus Pygoplites.",
         "type": "angelfish",
@@ -37,7 +37,7 @@
     },
     {
         "id": 5,
-        "name": "Emperor angelfish",
+        "name": "Emperor Angelfish",
         "price": 119.99,
         "desc" : "The emperor angelfish (Pomacanthus imperator) is a species of marine angelfish. It is a reef-associated fish, native to the Indian and Pacific Oceans, from the Red Sea to Hawaii and the Austral Islands.",
         "type": "angelfish",
@@ -46,7 +46,7 @@
     },
     {
         "id": 6,
-        "name": "Powder blue tang",
+        "name": "Powder Blue Tang",
         "price": 79.99,
         "desc" : "Acanthurus leucosternon is a marine tropical fish belonging to the family Acanthuridae, or surgeonfishes. Its common names are powder blue tang and powder-blue surgeonfish.",
         "type": "tang",
@@ -55,7 +55,7 @@
     },
     {
         "id": 7,
-        "name": "Moorish idol",
+        "name": "Moorish Idol",
         "price": 99.95,
         "desc" : "The Moorish idol (Zanclus cornutus), is a marine fish species, the sole extant representative of the family Zanclidae.",
         "type": "butterflyfish",
@@ -64,7 +64,7 @@
     },
     {
         "id": 8,
-        "name": "Blue tang",
+        "name": "Blue Tang",
         "price": 59.99,
         "desc" : "Paracanthurus hepatus is a species of Indo-Pacific surgeonfish. A popular fish in marine aquaria, it is the only member of the genus Paracanthurus.",
         "type": "tang",
@@ -73,11 +73,110 @@
     },
     {
         "id": 9,
-        "name": "Yellow tang",
+        "name": "Yellow Tang",
         "price": 49.99,
         "desc" : "The yellow tang (Zebrasoma flavescens) is a saltwater fish species of the family Acanthuridae. It is one of the most popular aquarium fish.",
         "type": "tang",
         "image": "https://dl.dropboxusercontent.com/s/gex057p93n155lp/yellow-tang.jpg",
         "code": "dYqOpaQBo9"
+    },
+    {
+        "id": 10,
+        "name": "Blue Cheek Butterflyfish",
+        "price": 139.99,
+        "desc" : "The blue-cheeked butterflyfish, Chaetodon semilarvatus, is a species of butterflyfish (family Chaetodontidae). It is found in the Red Sea and the Gulf of Aden, at depths of between 3 and 20 m.",
+        "type": "butterflyfish",
+        "image": "https://dl.dropboxusercontent.com/s/e30mr5mkthmjzoi/blue-cheek-butterfly.jpg",
+        "code": "4gLvAk5feg"
+    },
+    {
+        "id": 11,
+        "name": "Blue Ring Angelfish",
+        "price": 199.99,
+        "desc" : "The blue ring angelfish (Pomacanthus annularis) is an angelfish of the family Pomacanthidae, found in the Indo-West Pacific oceans from East Africa, throughout Indonesia and New Guinea to New Caledonia, north to southern Japan.",
+        "type": "angelfish",
+        "image": "https://dl.dropboxusercontent.com/s/vlmrvt3bgqfy0w3/blue-ring-angel.jpg",
+        "code": "EbR9PyqFm1"
+    },
+    {
+        "id": 12,
+        "name": "Magestic Angelfish",
+        "price": 240.99,
+        "desc" : "Pomacanthus navarchus, the blue-girdled angelfish or majestic angelfish, is a marine angelfish from the Indo-Pacific region. It occasionally makes its way into the aquarium trade. P. navarchus is one of the smallest of the larger species of angelfish. It grows to a size of 41 centimetres (16 in) in length, but usually much smaller, and can live to be up to 21 years old.",
+        "type": "angelfish",
+        "image": "https://dl.dropboxusercontent.com/s/rm3l36q87rz6aor/majestic-angelfish.jpg",
+        "code": "4caP1n7Wry"
+    },
+    {
+        "id": 13,
+        "name": "Ornate Butterflyfish",
+        "price": 499.99,
+        "desc" : "The Ornate Butterflyfish, Chaetodon ornatissimus, is a species of butterflyfish (family Chaetodontidae). The Ornate Butterflyfish is widespread throughout the tropical waters of the Indo-Pacific area.",
+        "type": "butterflyfish",
+        "image": "https://dl.dropboxusercontent.com/s/ghrbsctd5eqpfc9/ornate-butterfly.jpg",
+        "code": "3OXYhZM4YJ"
+    },
+    {
+        "id": 14,
+        "name": "Pearlscale Butterflyfish",
+        "price": 49.99,
+        "desc" : "The pearlscale butterflyfish (Chaetodon xanthurus) is a species of butterflyfish (family Chaetodontidae) also known as yellow-tailed butterflyfish, crosshatch butterflyfish or Philippines chevron butterflyfish (the chevron butterflyfish is an unrelated species of Chaetodon). It is found on or around the reefs of the central Indo-Pacific region from Indonesia and the Philippines north to the Ryukyu Islands.",
+        "type": "butterflyfish",
+        "image": "http://dl.dropboxusercontent.com/s/456cr13ivb5ntwb/pearlscale-butterfly.jpg",
+        "code": "vXgpM9h2iK"
+    },
+    {
+        "id": 15,
+        "name": "Queen Angelfish",
+        "price": 200.99,
+        "desc" : "The queen angelfish (Holacanthus ciliaris) is a marine angelfish commonly found near reefs in the warmer sections of the western Atlantic Ocean. Other common names include blue angelfish, golden angelfish, queen angel, and yellow angelfish.[1] Holocanthus ciliaris should not be confused with Holocanthus bermudensis, or the (Bermuda) blue angelfish, despite very similar appearances. They are two separate species.",
+        "type": "angelfish",
+        "image": "http://dl.dropboxusercontent.com/s/vy93ygw7x6tpcmz/queen-angel.jpg",
+        "code": "8sdBXGNRfI"
+    },
+    {
+        "id": 16,
+        "name": "Achilles Tang",
+        "price": 399.99,
+        "desc" : "Acanthurus achilles, commonly known as Achilles tang or Achilles surgeonfish, is a tropical marine fish native to the Pacific Ocean.",
+        "type": "tang",
+        "image": "http://dl.dropboxusercontent.com/s/fdk5sle2z3h15c1/acanthurus-achilles.jpg",
+        "code": "QLYoHAZQLW"
+    },
+    {
+        "id": 17,
+        "name": "Kleini's Butterflyfish",
+        "price": 25.99,
+        "desc" : "The sunburst butterflyfish, Chaetodon kleinii, is also known as the black-lipped butterflyfish (or 'blacklip butterflyfish') or Klein's butterflyfish. It is a native of the Indo-Pacific region, from the Red Sea and East Africa to the Hawaiian Islands and Samoa, north to southern Japan, south to Australia and New Caledonia. It is also found in Galapagos Islands in the Eastern Pacific.",
+        "type": "butterflyfish",
+        "image": "https://dl.dropboxusercontent.com/s/b51jzdbiajhtuas/kleinis-butterfly.jpg",
+        "code": "dGC82cAyJR"
+    },
+    {
+        "id": 18,
+        "name": "Purple Tang",
+        "price": 199.99,
+        "desc" : "Purple tangs grow to a maximum length of near 25 cm (9.8 in). Their bodies are purple in color with a yellow tail. The heads of purple tangs are covered with black spots, and black horizontal lines run down the sides of the bodies of some specimens. The center of their bodies are sometimes a darker color of purple relative to the rest of their bodies. On most specimens, the tips of their pectoral fins are yellow.",
+        "type": "tang",
+        "image": "https://dl.dropboxusercontent.com/s/2qil6wl3n0267wx/purple-tang.jpg",
+        "code": "OyAVKgDPyi"
+    },
+    {
+        "id": 19,
+        "name": "Sailfin Tang",
+        "price": 79.99,
+        "desc" : "The sailfin tang (Zebrasoma veliferum) is a marine reef tang in the fish family Acanthuridae. They may live at water depths of 1 - 60 m (3 - 200 ft) or more. The fish grow to a maximum length of 40 cm (15.8 in). It has an extensive range throughout Oceania, the Indian Ocean, and the South Pacific. Zebrasoma veliferum is a popular fish in the aquarium trade. They are herbivorous fish specializing in filamentous algae. Though their skin is light beige with stripes, it can turn dark brown under stress.",
+        "type": "tang",
+        "image": "https://dl.dropboxusercontent.com/s/yurwf4poz1d34oc/sailfin-tang.jpg",
+        "code": "4Gb8SXpOOq"
+    },
+    {
+        "id": 20,
+        "name": "Tinker's Butterflyfish",
+        "price": 239.99,
+        "desc" : "The Hawaiian butterflyfish, Chaetodon tinkeri, is a member of the family Chaetodontidae of order Perciformes. It is also known as Tinker's butterflyfish, after Spencer W. Tinker who discovered it in 1949, trapping them in fish traps at 90 feet (27 m) off Oahu, Hawaii.",
+        "type": "butterflyfish",
+        "image": "http://dl.dropboxusercontent.com/s/oqpy75xvh9kmpn8/tinkers-butterfly.jpg",
+        "code": "Fk4MjrWk5w"
     }
 ]
