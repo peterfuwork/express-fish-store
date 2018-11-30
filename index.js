@@ -88,7 +88,8 @@ app.post('/messagePOST', (req, res, next) => {
     const newObj = {
         text: body.comment.text,
         user: '',
-        cid: randomStr
+        cid: randomStr,
+        rating: body.comment.rating
     };
     comments[body.code].push(newObj);
     const newPost = comments[body.code];
@@ -102,7 +103,8 @@ app.put('/messagePUT', (req, res, next) => {
     const newObj = {
         text: body.text,
         user: body.user,
-        cid: body.cid
+        cid: body.cid,
+        rating: body.rating
     };
     comments[body.code] = [ ...comments[body.code].slice(0, body.arrIndex),
                             newObj, 

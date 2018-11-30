@@ -3,24 +3,28 @@
     { 
         "text": "I like this fish",
         "user": "superman1234",
-        "cid": "IPCBnYIR8iSygSz0Zf4U"
+        "cid": "IPCBnYIR8iSygSz0Zf4U",
+        "rating": 4.5
     },
     { 
         "text": "Highly recommand",
         "user": "s29jghs",
-        "cid": "jzSmBK4wCk4N8wPzwJC0"
+        "cid": "jzSmBK4wCk4N8wPzwJC0",
+        "rating": 5
     },
     { 
         "text": "Don't buy it from this store",
         "user": "23fasdfv",
-        "cid": "zHmLNJtv8DoEklAQUszs"
+        "cid": "zHmLNJtv8DoEklAQUszs",
+        "rating": 1
     }
   ],
   "zFG7vW2BKn":[
     { 
         "text": "i am OOOOOUT!",
         "user": "mrwonderful0910",
-        "cid": "75mh0sO4jY9K3ycB0NoO"
+        "cid": "75mh0sO4jY9K3ycB0NoO",
+        "rating": 0.5
     },
     { 
         "text": "Do not be mean!",
@@ -30,7 +34,8 @@
     { 
         "text": "it's cute and very hardy",
         "user": "23fasdfv",
-        "cid": "Ykd3PFHl6qn4QNvZDxUW"
+        "cid": "Ykd3PFHl6qn4QNvZDxUW",
+        "rating": 4.5
     }
   ],
   "SXIfr5mptm":[
@@ -42,43 +47,50 @@
     { 
         "text": "AWWWWWWW!! SO CUTE",
         "user": "mycutelittlepuppy1020",
-        "cid": "Is7tymLrla8s8IAhxPZK"
+        "cid": "Is7tymLrla8s8IAhxPZK",
+        "rating": 5
     },
     { 
         "text": "no idea why it's so expensive.",
         "user": "whateverguy1987",
-        "cid": "Lv6nRjQp01sEEXb5zWoj"
+        "cid": "Lv6nRjQp01sEEXb5zWoj",
+        "rating": 2
     }
   ],
   "H1HTy9h2pK":[
     { 
         "text": "looks ugly!",
         "user": "hatredguy2097",
-        "cid": "RmPX2m1IP46Z19Amu77W"
+        "cid": "RmPX2m1IP46Z19Amu77W",
+        "rating": 0.5
     },
     { 
         "text": "AWWWWWWW!! SO CUTE",
         "user": "mycutelittlepuppy1020",
-        "cid": "pxRmsbEmLZ29LmRnsDrx"
+        "cid": "pxRmsbEmLZ29LmRnsDrx",
+        "rating": 5
     }
   ],
   "4Npixi386s":[
     { 
         "text": "you won't regret to buy this fish.",
         "user": "23fasdfv",
-        "cid": "rItquGUTuSc4vGb1FJ1i"
+        "cid": "rItquGUTuSc4vGb1FJ1i",
+        "rating": 4
     },
     { 
         "text": "It's a pretty fish. Love it so much!",
         "user": "mycutelittlepuppy1020",
-        "cid": "dZ0dvLttmgyGR5LpnZmU"
+        "cid": "dZ0dvLttmgyGR5LpnZmU",
+        "rating": 4.5
     }
   ],
   "qMnJMu0Rch":[
     { 
         "text": "I bought 2 of them and they get along very well.",
         "user": "mycutelittlepuppy1020",
-        "cid": "MAuBjzFaZahyK4ahBebY"
+        "cid": "MAuBjzFaZahyK4ahBebY",
+        "rating": 4.5
     },
     { 
         "text": "She's a lier! Don't believe her.",
@@ -90,12 +102,14 @@
       {
         "text": "Don't buy it. It's very hard to survive.",
         "user": "s29jghs",
-        "cid": "7xLjjNdtY4c7ygLITWqA"
+        "cid": "7xLjjNdtY4c7ygLITWqA",
+        "rating": 0.5
       },
       {
-        "text": "It's extremely to keep live. Only for expert.",
+        "text": "It's extremely hard to keep it live. Only for expert.",
         "user": "handsomeman8495",
-        "cid": "4RicEJskLSGjhjvxMElF"
+        "cid": "4RicEJskLSGjhjvxMElF",
+        "rating": 1
       }
   ],
   "xQAPZetggl":[
@@ -107,24 +121,28 @@
     { 
         "text": "Nice fishy! but beware it EATS A LOT!",
         "user": "spammyguy879s",
-        "cid": "SsZzZLy5VkXQiI0PbfF6"
+        "cid": "SsZzZLy5VkXQiI0PbfF6",
+        "rating": 4
     },
     {
         "text": "I feed it algae and some pallets and it is very easy to keep alive.",
         "user": "handsomeman8495",
-        "cid": "EsvDdTwjSbRXPqmtRyPy"
+        "cid": "EsvDdTwjSbRXPqmtRyPy",
+        "rating": 4.5
     },
     { 
         "text": "It's also a pretty fish. Love it so much!",
         "user": "mycutelittlepuppy1020",
-        "cid": "xkWeiXz8QUhDpPidvdnK"
+        "cid": "xkWeiXz8QUhDpPidvdnK",
+        "rating": 5
     }
   ],
   "dYqOpaQBo9":[
     { 
         "text": "it's for any beginner.",
         "user": "northwinterguy102",
-        "cid": "goQzi1FFqQY4JduPTRNe"
+        "cid": "goQzi1FFqQY4JduPTRNe",
+        "rating": 4
     },
     {
         "text": "just chill...",
@@ -146,14 +164,16 @@
     { 
         "text": "Looks pretty! I had three of them in my tank. They like to swim together.",
         "user": "marineguy239",
-        "cid": "0qbpg2HeuXGU02Z7Ssl0"
+        "cid": "0qbpg2HeuXGU02Z7Ssl0",
+        "rating": 5
     }
   ],
   "EbR9PyqFm1":[
     { 
         "text": "This fish is aggresive. It gave me so much headache. Don't buy it.",
         "user": "northway30495",
-        "cid": "ZN7boeyKs7ARAwgBx0J9"
+        "cid": "ZN7boeyKs7ARAwgBx0J9",
+        "rating": 2.5
     },
     { 
         "text": "Can grow very big. You'll need to have at least 300 gallon tank to keep it calm.",
@@ -163,33 +183,38 @@
     { 
         "text": "my daughter loves it so much!",
         "user": "awwwwww847ghf",
-        "cid": "wXROw3XJzeZ6q93yfMPj"
+        "cid": "wXROw3XJzeZ6q93yfMPj",
+        "rating": 4.5
     }
   ],
   "4caP1n7Wry":[
     { 
         "text": "color looks great!!!",
         "user": "mamafish7777",
-        "cid": "ic0IDFcGmuv0brlSkhP0"
+        "cid": "ic0IDFcGmuv0brlSkhP0",
+        "rating": 4
     }
   ],
   "3OXYhZM4YJ":[
     { 
-        "text": "It's probably the most beautiful butterflyfish in the world. However, it's nearly impossible to keep it alive in your own tank. Don't buy it.",
+        "text": "It's probably the most beautiful butterflyfish in the world. However, it's nearly impossible to keep it alive in your own tank. Don't buy it. 🙄",
         "user": "guy92018f",
-        "cid": "jg9NmVmDSTVkhRwLA1LF"
+        "cid": "jg9NmVmDSTVkhRwLA1LF",
+        "rating": 3.5
     },
     { 
-        "text": "Wish I can have it in my tank.",
+        "text": "Wish I can have it in my tank. 😢",
         "user": "dragon2918",
-        "cid": "lGuU0NGnLMHphWQVikGM"
+        "cid": "lGuU0NGnLMHphWQVikGM",
+        "rating": 1
     }
   ],
   "vXgpM9h2iK":[
     { 
         "text": "Just bought it and it looks lovely in my small tank.",
         "user": "becauseIloveyou20130212",
-        "cid": "MqE5Y6K7Nw4AnEtXImMU"
+        "cid": "MqE5Y6K7Nw4AnEtXImMU",
+        "rating": 4
     },
     { 
         "text": ":)",
@@ -199,79 +224,92 @@
     { 
         "text": "Not expensive deal! It's a beginner butterflyfish.",
         "user": "caocaoWAWAWA2012",
-        "cid": "f6riJwdTaYBShm33VycD"
+        "cid": "f6riJwdTaYBShm33VycD",
+        "rating": 4.5
     },
     { 
         "text": "You won't regret to buy it!",
         "user": "myfriend20385ghri",
-        "cid": "CetQYX8VgyUgwjux6e6d"
+        "cid": "CetQYX8VgyUgwjux6e6d",
+        "rating": 4
     }
   ],
   "8sdBXGNRfI": [
     { 
         "text": "Cooooool fish!",
         "user": "bmwIsTheBestCar19840909",
-        "cid": "Fsqh1ljNCgfhJzVS4PHv"
+        "cid": "Fsqh1ljNCgfhJzVS4PHv",
+        "rating": 3
     },
     { 
         "text": "Not bad!",
         "user": "fdsngieh8029",
-        "cid": "lEjJCnJGcyvTfLsECDvu"
+        "cid": "lEjJCnJGcyvTfLsECDvu",
+        "rating": 3.5
     }
   ],
   "QLYoHAZQLW": [
     { 
         "text": "It's only for experts.",
         "user": "expertguy2018",
-        "cid": "THueHx97CvVLIJvWF9M6"
+        "cid": "THueHx97CvVLIJvWF9M6",
+        "rating": 1
     }
   ],
   "dGC82cAyJR": [
     { 
         "text": "A nice addition to add to your tank. It's not reef save. You'll need to keep your eye on it.",
         "user": "gbiurh028174",
-        "cid": "AmPIAtPA2cBgo850BzLz"
+        "cid": "AmPIAtPA2cBgo850BzLz",
+        "rating": 4
     },
     { 
         "text": "It's my first butterflyfish. Love it!",
         "user": "catgirlwawa28175",
-        "cid": "y5eXSt8TyOWWKRSbWkXM"
+        "cid": "y5eXSt8TyOWWKRSbWkXM",
+        "rating": 5
     }
   ],
   "OyAVKgDPyi": [
     { 
         "text": "This fish is extremely aggressive. If you want more tangs in your tank make sure to add all of them together.",
         "user": "expertguy2018",
-        "cid": "DNGI41UuKf3aikrTSCJx"
+        "cid": "DNGI41UuKf3aikrTSCJx",
+        "rating": 1
     },
     { 
         "text": "Don't like this fish. It killed all of my other tangs in tank.",
         "user": "poorman234",
-        "cid": "uJx5YeSpY6mPIxoNe17Z"
+        "cid": "uJx5YeSpY6mPIxoNe17Z",
+        "rating": 1.5
     }
   ],
   "4Gb8SXpOOq": [
     { 
         "text": "This fish cleans my tank so well and very easy to get along with other fish.",
         "user": "s7774kitchendude",
-        "cid": "PbW87Dmwvjdarz74XLPs"
+        "cid": "PbW87Dmwvjdarz74XLPs",
+        "rating": 5
     },
     { 
         "text": "It eats algae and anything. Love it.",
         "user": "superman2014b",
-        "cid": "RrxbejI4vXw46QwVrNcz"
+        "cid": "RrxbejI4vXw46QwVrNcz",
+        "rating": 4
     },
     { 
         "text": "My kids love this fish so much!",
         "user": "dude2038ghs",
-        "cid": "fnxSnPMqfvih14UlvmNy"
+        "cid": "fnxSnPMqfvih14UlvmNy",
+        "rating": 5
     }
   ],
   "Fk4MjrWk5w": [
     { 
         "text": "Never seen this fish before. So pretty!",
         "user": "normalguy029",
-        "cid": "l3JILL21KZv0r0EfekEh"
+        "cid": "l3JILL21KZv0r0EfekEh",
+        "rating": 4.5
     },
     { 
         "text": "Looks cool and cute.",
@@ -286,7 +324,8 @@
     { 
         "text": "I love it!",
         "user": "newyorker84710zs",
-        "cid": "XNCRrfFkcTB2bt7sqnFS"
+        "cid": "XNCRrfFkcTB2bt7sqnFS",
+        "rating": 4.5
     },
     { 
         "text": "Looks so tasty!",
