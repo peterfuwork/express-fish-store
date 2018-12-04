@@ -2,13 +2,53 @@ const express = require('express');
 const bodyParser = require('body-parser');
 var cors = require('cors');
 var randomString = require('random-string');
+const multer = require('multer');
+const cloudinary = require('cloudinary');
+const keys = require('./config/keys');
+
 const PORT = process.env.PORT || 3001;
+
+cloudinary.config({ 
+    cloud_name: keys.cloud_name, 
+    api_key: keys.api_key, 
+    api_secret: keys.api_secret
+})
 
 const app = express();
 let data = require('./fish');
 let comments = require('./comments');
 
+
+const storage = multer.diskStorage({
+    destination: function(req, file, cb) {
+        cb(null, './uploads/');
+    },
+    filename: function(req, file, cb) {
+        cb(null, Date.now() + file.originalname);
+    }
+});
+
+const fileFilter = (req, file, cb) => {
+    // reject a file
+    if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/png') {
+        cb(null, true);
+    } else {
+        cb(new Error('file needs to be jpeg or png format'), false);
+    }
+}
+
+const upload = multer({
+    storage: storage, 
+    limits: {
+        fileSize: 1024 * 1024 * 5
+    },
+    fileFilter: fileFilter
+});
+
+
+
 app.use(cors());
+app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.json());
 
 app.get('/', (req, res, next) => {
@@ -49,9 +89,12 @@ app.get('/fish/:id', (req, res, next) => {
     }
 });
 
-app.post('/fishPOST', (req, res, next) => {
+app.post('/fishPOST', upload.single('image'), (req, res, next) => {
     console.log('req.body', req.body)
+    console.log('req.file',req.file)
     const body = req.body;
+    const image = {};
+
     const randomStr = randomString({
         length: 10,
         numeric: true,
@@ -59,21 +102,30 @@ app.post('/fishPOST', (req, res, next) => {
         special: false,
         exclude: ['a', 'b', '1']
     });
-    const newFishObj = {
-        id: data.length + 1,
-        name: body.name,
-        price: body.price,
-        desc: body.desc,
-        type: body.type,
-        image: body.image,
-        code: randomStr
-    };
-    data.push(newFishObj);
-    comments = Object.assign({
-        [randomStr]:[]
-    }, comments);
-    console.log('newFishObj',newFishObj);
-    res.send(newFishObj);
+
+    cloudinary.v2.uploader.upload(req.file.path, 
+        function(error, result) {
+            image.url = result.url;
+            console.log('image',image)
+
+            const newFishObj = {
+                id: data.length + 1,
+                name: body.name,
+                price: body.price,
+                desc: body.desc,
+                type: body.type,
+                image: image.url,
+                code: randomStr
+            };
+
+            data.push(newFishObj);
+            comments = Object.assign({
+                [randomStr]:[]
+            }, comments);
+
+            console.log('newFishObj',newFishObj);
+            res.send(newFishObj);
+        });
 })
 
 app.post('/messagePOST', (req, res, next) => {
@@ -122,6 +174,19 @@ app.delete('/messageDELETE', (req, res, next) => {
     comments[body.code] = mapped;
     console.log('mapped',mapped)
     res.send(mapped);
+})
+
+app.post('/test', upload.single('image'), (req, res, next) => {
+    console.log('req.file',req.file)
+    const image = {};
+    cloudinary.v2.uploader.upload(req.file.path, 
+    function(error, result) {
+        image.url = result.url;
+        image.id = result.public_id;
+        console.log('image',image)
+        res.send(image);
+    });
+    
 })
 
 
