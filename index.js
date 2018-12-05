@@ -105,11 +105,13 @@ app.post('/fishPOST', upload.single('image'), (req, res, next) => {
 
     cloudinary.v2.uploader.upload(req.file.path, 
         function(error, result) {
+            console.log('result',result)
             image.url = result.url;
+            image.pid = result.public_id
             console.log('image',image)
 
             const newFishObj = {
-                id: data.length + 1,
+                id: image.pid,
                 name: body.name,
                 price: body.price,
                 desc: body.desc,
@@ -174,19 +176,6 @@ app.delete('/messageDELETE', (req, res, next) => {
     comments[body.code] = mapped;
     console.log('mapped',mapped)
     res.send(mapped);
-})
-
-app.post('/test', upload.single('image'), (req, res, next) => {
-    console.log('req.file',req.file)
-    const image = {};
-    cloudinary.v2.uploader.upload(req.file.path, 
-    function(error, result) {
-        image.url = result.url;
-        image.id = result.public_id;
-        console.log('image',image)
-        res.send(image);
-    });
-    
 })
 
 
