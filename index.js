@@ -108,15 +108,20 @@ app.post('/fishPOST', upload.single('image'), (req, res, next) => {
             console.log('result',result)
             image.url = result.url;
             image.pid = result.public_id
-            console.log('image',image)
-
+            console.log('req',req.body)
+            const isReefSafe = (body.reef_safe == true);
             const newFishObj = {
                 id: image.pid,
                 name: body.name,
-                price: body.price,
+                price: Number(body.price),
                 desc: body.desc,
                 type: body.type,
                 image: image.url,
+                care_level: body.care_level,
+                temperament: body.temperament,
+                diet: body.diet,
+                reef_safe: isReefSafe,
+                minimum_tank_size: Number(body.minimum_tank_size),
                 code: randomStr
             };
 
