@@ -90,25 +90,13 @@ app.get('/fish/:id', (req, res, next) => {
 });
 
 app.post('/fishPOST', upload.single('image'), (req, res, next) => {
-    console.log('req.body', req.body)
-    console.log('req.file',req.file)
     const body = req.body;
     const image = {};
 
-    const randomStr = randomString({
-        length: 10,
-        numeric: true,
-        letters: true,
-        special: false,
-        exclude: ['a', 'b', '1']
-    });
-
     cloudinary.v2.uploader.upload(req.file.path, 
         function(error, result) {
-            console.log('result',result)
             image.url = result.url;
             image.pid = result.public_id
-            console.log('req',req.body)
             const isReefSafe = (body.reef_safe == true);
             const newFishObj = {
                 id: image.pid,
@@ -121,22 +109,15 @@ app.post('/fishPOST', upload.single('image'), (req, res, next) => {
                 temperament: body.temperament,
                 diet: body.diet,
                 reef_safe: isReefSafe,
-                minimum_tank_size: Number(body.minimum_tank_size),
-                code: randomStr
+                minimum_tank_size: Number(body.minimum_tank_size)
             };
 
             data.push(newFishObj);
-            comments = Object.assign({
-                [randomStr]:[]
-            }, comments);
-
-            console.log('newFishObj',newFishObj);
             res.send(newFishObj);
         });
 })
 
 app.post('/messagePOST', (req, res, next) => {
-    console.log('req.body', req.body)
     const body = req.body;
     const randomStr = randomString({
         length: 20,
@@ -145,41 +126,33 @@ app.post('/messagePOST', (req, res, next) => {
         special: false
     });
     const newObj = {
-        text: body.comment.text,
-        user: '',
+        text: body.text,
+        uid: "",
         cid: randomStr,
-        rating: body.comment.rating
+        fid: body.fid,
+        rating: body.rating
     };
-    comments[body.code].push(newObj);
-    const newPost = comments[body.code];
-    console.log('newPost',newPost)
-    res.send(newPost);
+    comments.push(newObj);
+    res.send(newObj);
 })
 
 app.put('/messagePUT', (req, res, next) => {
     const body = req.body;
-    console.log('body',body);
-    const newObj = {
-        text: body.text,
-        user: body.user,
-        cid: body.cid,
-        rating: body.rating
-    };
-    comments[body.code] = [ ...comments[body.code].slice(0, body.arrIndex),
-                            newObj, 
-                            ...comments[body.code].slice(body.arrIndex + 1)];
-    const newPost = comments[body.code];
-    console.log('newPost',newPost)
-    res.send(newPost);
+    comments.forEach(obj => {
+        if (obj.cid === body.cid) {
+            obj.text = body.text;
+            obj.rating = body.rating;
+        }
+    })
+    res.send(comments);
 })
 
 app.delete('/messageDELETE', (req, res, next) => {
     const body = req.body;
-    var mapped = comments[body.code].filter(obj => {
-        return obj.cid != req.body.cid;
+    const mapped = comments.filter(obj => {
+        return obj.cid != body.cid;
     })
-    comments[body.code] = mapped;
-    console.log('mapped',mapped)
+    comments = mapped;
     res.send(mapped);
 })
 

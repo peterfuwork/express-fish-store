@@ -10,8 +10,7 @@
         "temperament": "Peaceful",
         "diet": "Carnivore",
         "minimum_tank_size": 55,
-        "reef_safe": false,
-        "code": "0Jbo1IxHs4"
+        "reef_safe": false
     },
     {
         "id": "qyblg33mt64xk4tcd9zn",
@@ -24,8 +23,7 @@
         "temperament": "Peaceful",
         "diet": "Carnivore",
         "minimum_tank_size": 75,
-        "reef_safe": false,
-        "code": "zFG7vW2BKn"
+        "reef_safe": false
     },
     {
         "id": "zokhoo1stlmubxtuuojp",
@@ -38,8 +36,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 75,
-        "reef_safe": false,
-        "code": "SXIfr5mptm"
+        "reef_safe": false
     },
     {
         "id": "e77mkwtsjqnc1qes8alo",
@@ -52,8 +49,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Omnivore",
         "minimum_tank_size": 300,
-        "reef_safe": false,
-        "code": "H1HTy9h2pK"
+        "reef_safe": false
     },
     {
         "id": "a6v6ujxkytenza6rluqy",
@@ -66,8 +62,7 @@
         "temperament": "Aggressive",
         "diet": "Omnivore",
         "minimum_tank_size": 300,
-        "reef_safe": false,
-        "code": "4Npixi386s"
+        "reef_safe": false
     },
     {
         "id": "dpuxr385qtm6zw9qhkgm",
@@ -80,8 +75,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Herbivore",
         "minimum_tank_size": 180,
-        "reef_safe": true,
-        "code": "qMnJMu0Rch"
+        "reef_safe": true
     },
     {
         "id": "ajeiwz27cxtrtutb0umi",
@@ -94,8 +88,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 180,
-        "reef_safe": false,
-        "code": "DhCrEsjO8c"
+        "reef_safe": false
     },
     {
         "id": "zlppfjcfzuigpqaagps0",
@@ -108,8 +101,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Herbivore",
         "minimum_tank_size": 120,
-        "reef_safe": true,
-        "code": "xQAPZetggl"
+        "reef_safe": true
     },
     {
         "id": "xlo8iaswkdahu3ygek8b",
@@ -122,8 +114,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Herbivore",
         "minimum_tank_size": 75,
-        "reef_safe": true,
-        "code": "dYqOpaQBo9"
+        "reef_safe": true
     },
     {
         "id": "qtqznmfl05nrblczi4ab",
@@ -136,8 +127,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 135,
-        "reef_safe": false,
-        "code": "4gLvAk5feg"
+        "reef_safe": false
     },
     {
         "id": "fzhtf1uljsp7m88eb0gf",
@@ -150,8 +140,7 @@
         "temperament": "Aggressive",
         "diet": "Omnivore",
         "minimum_tank_size": 300,
-        "reef_safe": false,
-        "code": "EbR9PyqFm1"
+        "reef_safe": false
     },
     {
         "id": "f9rpeepl0ff2r9t0hzmy",
@@ -164,8 +153,7 @@
         "temperament": "Aggressive",
         "diet": "Omnivore",
         "minimum_tank_size": 250,
-        "reef_safe": false,
-        "code": "4caP1n7Wry"
+        "reef_safe": false
     },
     {
         "id": "fd4zq7vchwv40cyo8rmm",
@@ -178,8 +166,7 @@
         "temperament": "Peaceful",
         "diet": "Carnivore",
         "minimum_tank_size": 200,
-        "reef_safe": false,
-        "code": "3OXYhZM4YJ"
+        "reef_safe": false
     },
     {
         "id": "pqqpvqyrqi5ukkwymfm4",
@@ -192,8 +179,7 @@
         "temperament": "Peaceful",
         "diet": "Carnivore",
         "minimum_tank_size": 55,
-        "reef_safe": false,
-        "code": "vXgpM9h2iK"
+        "reef_safe": false
     },
     {
         "id": "xi1fuyq2xddo4rny3r5t",
@@ -206,8 +192,7 @@
         "temperament": "Aggressive",
         "diet": "Omnivore",
         "minimum_tank_size": 275,
-        "reef_safe": false,
-        "code": "8sdBXGNRfI"
+        "reef_safe": false
     },
     {
         "id": "bmecxldmiyieoi4yupbc",
@@ -220,8 +205,7 @@
         "temperament": "Aggressive",
         "diet": "Herbivore",
         "minimum_tank_size": 300,
-        "reef_safe": true,
-        "code": "QLYoHAZQLW"
+        "reef_safe": true
     },
     {
         "id": "vwjzhrijthczn6fiw7mk",
@@ -234,8 +218,7 @@
         "temperament": "Peaceful",
         "diet": "Carnivore",
         "minimum_tank_size": 75,
-        "reef_safe": false,
-        "code": "dGC82cAyJR"
+        "reef_safe": false
     },
     {
         "id": "nrzzu3fj65emv2virlik",
@@ -247,8 +230,7 @@
         "care_level": "Moderate",
         "temperament": "Aggressive",
         "diet": "Herbivore",
-        "minimum_tank_size": 180,
-        "code": "OyAVKgDPyi"
+        "minimum_tank_size": 180
     },
     {
         "id": "eijxkhbog4nbhzdjkw1y",
@@ -261,8 +243,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Herbivore",
         "minimum_tank_size": 180,
-        "reef_safe": true,
-        "code": "4Gb8SXpOOq"
+        "reef_safe": true
     },
     {
         "id": "v6ons2r90n1mjayelumu",
@@ -275,8 +256,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 180,
-        "reef_safe": false,
-        "code": "Fk4MjrWk5w"
+        "reef_safe": false
     },
     {
         "id": "qd3762umgou7yem9ezv9",
@@ -289,8 +269,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Omnivore",
         "minimum_tank_size": 275,
-        "reef_safe": false,
-        "code": "HQ8ySfmQ8E"
+        "reef_safe": false
     },
     {
         "id": "k644a1pd56j21qgsfzhv",
@@ -303,8 +282,7 @@
         "temperament": "Peaceful",
         "diet": "Omnivore",
         "minimum_tank_size": 75,
-        "reef_safe": false,
-        "code": "hifz2g7mPc"
+        "reef_safe": false
     },
     {
         "id": "yqrbnd4x1zoi5i4djh7z",
@@ -317,8 +295,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Omnivore",
         "minimum_tank_size": 125,
-        "reef_safe": false,
-        "code": "afWeuuiv6W"
+        "reef_safe": false
     },
     {
         "id": "ddkqanqur0nlwc4ur6ly",
@@ -331,8 +308,7 @@
         "temperament": "Peaceful",
         "diet": "Carnivore",
         "minimum_tank_size": 175,
-        "reef_safe": false,
-        "code": "7qyXOmf4pl"
+        "reef_safe": false
     },
     {
         "id": "utwp7aksmtxxkw3ycymi",
@@ -345,8 +321,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 180,
-        "reef_safe": false,
-        "code": "FpVR0CRGIF"
+        "reef_safe": false
     },
     {
         "id": "pahjh5hpq6lrvsra1bjc",
@@ -359,8 +334,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 250,
-        "reef_safe": false,
-        "code": "M9cNhGMyPj"
+        "reef_safe": false
     },
     {
         "id": "bdp1iphvo5atdvn96fo8",
@@ -373,8 +347,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 180,
-        "reef_safe": false,
-        "code": "M1ZZml4JCw"
+        "reef_safe": false
     },
     {
         "id": "v0bplzsxhr2bnzacljvv",
@@ -387,8 +360,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Omnivore",
         "minimum_tank_size": 250,
-        "reef_safe": false,
-        "code": "k5xLlaMlEe"
+        "reef_safe": false
     },
     {
         "id": "amg8qf7qel0jhiooky8q",
@@ -401,8 +373,7 @@
         "temperament": "Aggressive",
         "diet": "Herbivore",
         "minimum_tank_size": 300,
-        "reef_safe": true,
-        "code": "3noBkGwNtQ"
+        "reef_safe": true
     },
     {
         "id": "fzpnlpxhn460s103mqdw",
@@ -415,8 +386,7 @@
         "temperament": "Peaceful",
         "diet": "Carnivore",
         "minimum_tank_size": 175,
-        "reef_safe": false,
-        "code": "R9GYpgCyNo"
+        "reef_safe": false
     },
     {
         "id": "di7uyaw6x5poxv3jvyqf",
@@ -429,8 +399,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Herbivore",
         "minimum_tank_size": 250,
-        "reef_safe": true,
-        "code": "AoL6znBK0K"
+        "reef_safe": true
     },
     {
         "id": "iqunfofzdd10r9tg04vf",
@@ -443,8 +412,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 175,
-        "reef_safe": false,
-        "code": "uSvT0cHBQb"
+        "reef_safe": false
     },
     {
         "id": "fum4d2pnv221kbob3yh9",
@@ -457,8 +425,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 300,
-        "reef_safe": false,
-        "code": "hH5ZGV3CYL"
+        "reef_safe": false
     },
     {
         "id": "pf2phyzjxvplbt26qxmj",
@@ -471,8 +438,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Omnivore",
         "minimum_tank_size": 200,
-        "reef_safe": false,
-        "code": "jvJLQuOUSp"
+        "reef_safe": false
     },
     {
         "id": "zceofq15w1cf20hssmpt",
@@ -485,8 +451,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 235,
-        "reef_safe": false,
-        "code": "rOjIkSqgVM"
+        "reef_safe": false
     },
     {
         "id": "luqx6brix5x0dt8bm4v3",
@@ -499,8 +464,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Omnivore",
         "minimum_tank_size": 200,
-        "reef_safe": false,
-        "code": "QQVbFujjTQ"
+        "reef_safe": false
     },
     {
         "id": "xxiystneraxcoweyoenn",
@@ -513,8 +477,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 250,
-        "reef_safe": false,
-        "code": "VOyyb70tnO"
+        "reef_safe": false
     },
     {
         "id": "vftq5uphb7r4lbnxfeih",
@@ -527,8 +490,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 175,
-        "reef_safe": false,
-        "code": "6flWjOb6j1"
+        "reef_safe": false
     },
     {
         "id": "vln7lp4lcxmxdf5maob2",
@@ -541,8 +503,7 @@
         "temperament": "Aggressive",
         "diet": "Herbivore",
         "minimum_tank_size": 500,
-        "reef_safe": true,
-        "code": "zxZos196LD"
+        "reef_safe": true
     },
     {
         "id": "ykp9rafp4yksxsxwnfh9",
@@ -555,8 +516,7 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "minimum_tank_size": 200,
-        "reef_safe": false,
-        "code": "YqJ2UAr2jD"
+        "reef_safe": false
     },
     {
         "id": "nyja562xfnegrycdbo0s",
@@ -569,8 +529,7 @@
         "temperament": "Peaceful",
         "diet": "Carnivore",
         "minimum_tank_size": 120,
-        "reef_safe": false,
-        "code": "NodAnBR5j6"
+        "reef_safe": false
     },
     {
         "id": "gcda6hg4t9g7bbdqu3gz",
@@ -583,7 +542,6 @@
         "temperament": "Semi-Aggressive",
         "diet": "Carnivore",
         "reef_safe": false,
-        "minimum_tank_size": 125,
-        "code": "NKZcsJzSCs"
+        "minimum_tank_size": 125
     }
 ]
