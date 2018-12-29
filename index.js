@@ -1,10 +1,11 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-var cors = require('cors');
-var randomString = require('random-string');
-const multer = require('multer');
-const cloudinary = require('cloudinary');
-const keys = require('./config/keys');
+const express = require("express");
+const bodyParser = require("body-parser");
+var cors = require("cors");
+var randomString = require("random-string");
+const multer = require("multer");
+const cloudinary = require("cloudinary");
+const keys = require("./config/keys");
+const queries = require("./queries")
 
 const PORT = process.env.PORT || 3001;
 
@@ -15,13 +16,10 @@ cloudinary.config({
 })
 
 const app = express();
-let data = require('./fish');
-let comments = require('./comments');
-
 
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
-        cb(null, './uploads/');
+        cb(null, "./uploads/");
     },
     filename: function(req, file, cb) {
         cb(null, Date.now() + file.originalname);
@@ -30,10 +28,10 @@ const storage = multer.diskStorage({
 
 const fileFilter = (req, file, cb) => {
     // reject a file
-    if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/png') {
+    if (file.mimetype === "image/jpeg" || file.mimetype === "image/png") {
         cb(null, true);
     } else {
-        cb(new Error('file needs to be jpeg or png format'), false);
+        cb(new Error("file needs to be jpeg or png format"), false);
     }
 }
 
@@ -46,50 +44,61 @@ const upload = multer({
 });
 
 
-
 app.use(cors());
-app.use('/uploads', express.static('uploads'));
+app.use("/uploads", express.static("uploads"));
 app.use(bodyParser.json());
 
-app.get('/', (req, res, next) => {
+app.get("/", (req, res, next) => {
     res.send({ message: "hello world" });
     next();
 });
 
-app.get('/fish', (req, res, next) => {
-    res.send({ fish: data })
+app.get("/fish", (req, res, next) => {
+    queries.getAllFish().then(fish => res.send({ fish }));
 });
 
-app.get('/comments', (req, res, next) => {
-    res.send({ comments })
+app.get("/users", (req, res, next) => {
+    queries.getAllUsers().then(users => res.send({ users }));
 });
 
-app.get('/fish/butterflyfish', (req, res, next) => {
-    let matchingFish = data.filter(fish => fish.type === "butterflyfish");
-    res.send({ fish: matchingFish })
+app.get("/comments", (req, res, next) => {
+    queries.getAllCommentsWithUsername().then(comments => res.send({ comments }));
 });
 
-app.get('/fish/angelfish', (req, res, next) => {
-    let matchingFish = data.filter(fish => fish.type === "angelfish");
-    res.send({ fish: matchingFish })
+app.get("/fish/butterflyfish", (req, res, next) => {
+    queries.getAllFish().then(fish => {
+        let matchingFish = fish.filter(singleFish => singleFish.type === "butterflyfish");
+        res.send({ fish: matchingFish });
+    });
 });
 
-app.get('/fish/tang', (req, res, next) => {
-    let matchingFish = data.filter(fish => fish.type === "tang");
-    res.send({ fish: matchingFish })
+app.get("/fish/angelfish", (req, res, next) => {
+    queries.getAllFish().then(fish => {
+        let matchingFish = fish.filter(singleFish => singleFish.type === "angelfish");
+        res.send({ fish: matchingFish });
+    });
 });
 
-app.get('/fish/:id', (req, res, next) => {
-    let id = parseInt(req.params.id);
-    let matchingFish = data.filter(fish => fish.id === id);
-    if(!matchingFish.length) {
-        res.status(404).send({ message: "hey this doesn't exist" })
-    } else {
-        res.send({ fish: matchingFish[0] })
-    }
+app.get("/fish/tang", (req, res, next) => {
+    queries.getAllFish().then(fish => {
+        let matchingFish = fish.filter(singleFish => singleFish.type === "tang");
+        res.send({ fish: matchingFish });
+    });
 });
 
-app.post('/fishPOST', upload.single('image'), (req, res, next) => {
+app.get("/fish/:id", (req, res, next) => {
+    let id = req.params.id;
+    queries.getAllFish().then(fish => {
+        let matchingFish = fish.filter(singleFish => singleFish.id === id);
+        if(!matchingFish.length) {
+            res.status(404).send({ message: "hey this doesn't exist" })
+        } else {
+            res.send({ fish: matchingFish[0] })
+        }
+    });
+});
+
+app.post("/fishPOST", upload.single("image"), (req, res, next) => {
     const body = req.body;
     const image = {};
 
@@ -111,13 +120,14 @@ app.post('/fishPOST', upload.single('image'), (req, res, next) => {
                 reef_safe: isReefSafe,
                 minimum_tank_size: Number(body.minimum_tank_size)
             };
-
-            data.push(newFishObj);
-            res.send(newFishObj);
+            queries.createNewFishProduct(newFishObj)
+            .then(newFishObj => {
+                res.send(newFishObj[0]);
+            });
         });
-})
+});
 
-app.post('/messagePOST', (req, res, next) => {
+app.post("/messagePOST", (req, res, next) => {
     const body = req.body;
     const randomStr = randomString({
         length: 20,
@@ -125,37 +135,45 @@ app.post('/messagePOST', (req, res, next) => {
         letters: true,
         special: false
     });
-    const newObj = {
+    if(body.rating === "") {
+        body.rating = undefined;
+    }
+    const newCommentObj = {
         text: body.text,
-        uid: "",
+        uid: body.uid,
         cid: randomStr,
         fid: body.fid,
         rating: body.rating
     };
-    comments.push(newObj);
-    res.send(newObj);
-})
+    queries.createNewComment(newCommentObj)
+    .then(newCommentObj => {
+        queries.findUsernameWhenPostComment(newCommentObj[0])
+        .then(newCommentObjWithUsername => {
+            res.send(newCommentObjWithUsername[0]);
+        });
+    });
+});
 
-app.put('/messagePUT', (req, res, next) => {
+app.put("/messagePUT", (req, res, next) => {
     const body = req.body;
-    comments.forEach(obj => {
-        if (obj.cid === body.cid) {
-            obj.text = body.text;
-            obj.rating = body.rating;
-        }
-    })
-    res.send(comments);
-})
+    queries.updateComment(body)
+    .then(newCommentObj => {
+        queries.getAllCommentsWithUsername()
+        .then(comments => {
+            res.send(comments);
+        });
+    });
+});
 
-app.delete('/messageDELETE', (req, res, next) => {
+app.delete("/messageDELETE", (req, res, next) => {
     const body = req.body;
-    const mapped = comments.filter(obj => {
-        return obj.cid != body.cid;
-    })
-    comments = mapped;
-    res.send(mapped);
-})
-
-
+    queries.deleteComment(body.cid)
+    .then(newObj => {
+        queries.getAllCommentsWithUsername()
+        .then(comments => {
+            res.send(comments);
+        });
+    });
+});
 
 app.listen(PORT);
