@@ -10,6 +10,15 @@ module.exports = {
             "last_name"
         );
     },
+    getUser(userObj) {
+        return db("users").select(
+            "id",
+            "first_name",
+            "last_name"
+        ).where("username", userObj.username)
+        .andWhere("password", userObj.password)
+        .returning("*");
+    },
     getAllCommentsWithUsername() {
         return db("comments").innerJoin("users", "users.id", "comments.uid")
         .select(

@@ -1,11 +1,14 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const morgan = require('morgan');
 var cors = require("cors");
 var randomString = require("random-string");
 const multer = require("multer");
 const cloudinary = require("cloudinary");
 const keys = require("./config/keys");
-const queries = require("./queries")
+const queries = require("./queries");
+// const passport = require('passport');
+// const LocalStrategy = require('passport-local');
 
 const PORT = process.env.PORT || 3001;
 
@@ -16,6 +19,7 @@ cloudinary.config({
 })
 
 const app = express();
+app.use(morgan('combined'));
 
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
@@ -175,5 +179,38 @@ app.delete("/messageDELETE", (req, res, next) => {
         });
     });
 });
+
+app.post("/login", (req, res, next) => {
+    const body = req.body;
+    queries.getUser(body).then(user => {
+        if(user.length === 0) {
+            res.send({error: "username or password is incorrect!!"}); 
+        } else {
+            res.send(user[0]);
+        }
+    })
+});
+
+
+// const localOptions = { usernameField: 'email' };
+// const localLogin = new LocalStrategy(localOptions, function(email, password, done) {
+//     // Verify this email and password, call done with the user
+//     // if it is the correct email and password
+//     // otherwise, call done with false
+//     User.findOne({ email: email }, function(err, user) {
+//         if (err) { return done(err); }
+//         if (!user) { return done(null, false);}
+
+//         // compare passwords = is `password` equal to user.password?
+//         user.comparePassword(password, function(err, isMatch) {
+//             if (err) { return done(err);}
+//             if (!isMatch) { return done(null, false); }
+
+//             return done(null, user);
+//         });
+//     });
+// });
+
+// passport.use(localLogin);
 
 app.listen(PORT);
