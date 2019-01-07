@@ -10,6 +10,20 @@ module.exports = {
             "last_name"
         );
     },
+    getUserByUsername(userObj) {
+        return db("users")
+        .select()
+        .where("username", userObj.username)
+        .returning("*");
+    },
+    createNewUser(newUserObj) {
+        return db("users")
+            .insert(newUserObj)
+            .returning([
+                "id",
+                "username"
+            ]);
+    },
     getUser(userObj) {
         return db("users").select(
             "id",

@@ -1,12 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const morgan = require('morgan');
+//const morgan = require('morgan');
 var cors = require("cors");
 var randomString = require("random-string");
 const multer = require("multer");
 const cloudinary = require("cloudinary");
 const keys = require("./config/keys");
 const queries = require("./queries");
+const bcrypt = require('bcrypt');
 // const passport = require('passport');
 // const LocalStrategy = require('passport-local');
 
@@ -19,7 +20,7 @@ cloudinary.config({
 })
 
 const app = express();
-app.use(morgan('combined'));
+//app.use(morgan('combined'));
 
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
@@ -182,12 +183,30 @@ app.delete("/messageDELETE", (req, res, next) => {
 
 app.post("/login", (req, res, next) => {
     const body = req.body;
-    queries.getUser(body).then(user => {
-        if(user.length === 0) {
-            res.send({error: "username or password is incorrect!!"}); 
-        } else {
-            res.send(user[0]);
-        }
+    queries.getUserByUsername(body).then(user => {
+        return bcrypt.compare(body.password, user[0].password)
+        .then(isGood => {
+            if (isGood) {
+                res.send(user[0]);
+            } else {
+                res.send({error: "username or password is incorrect!!"}); 
+            }  
+        })
+    })
+});
+
+app.post("/signup", (req, res, next) => {
+    const body = req.body;
+    const newUserObj = {
+        first_name: body.first_name,
+        last_name: body.last_name,
+        birth_year: body.birth_year,
+        email: body.email,
+        username: body.username,
+        password: bcrypt.hashSync(body.password, 8)
+    }
+    queries.createNewUser(newUserObj).then(user => {
+        res.send(user[0]);
     })
 });
 
